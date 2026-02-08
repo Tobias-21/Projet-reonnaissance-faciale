@@ -1,0 +1,6 @@
+opencv-python
+dlib
+cmake
+fastapi
+mtcnn
+opencv-contrib-python
