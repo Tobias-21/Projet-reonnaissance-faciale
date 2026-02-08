@@ -54,7 +54,7 @@ async def detect(files: List[UploadFile] = File(...)):
             # Enregistrer l'image détectée
             timestamp = datetime.now().strftime("%Y%m%d_%H%M%S%f")
             filename = f"face_{timestamp}.jpg"
-            cv2.imwrite(os.path.join(output_dir, filename), img_filtrer)
+            cv2.imwrite(os.path.join(output_dir, filename), img_face)
 
             # Extraire les landmarks pour l'encodeur dlib
             face_rect = dlib.rectangle(left=x, top=y, right=x+w, bottom=y+h)

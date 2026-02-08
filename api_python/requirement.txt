@@ -1,4 +1,0 @@
-fastapi
-dlib
-cmake
-mtcnn
