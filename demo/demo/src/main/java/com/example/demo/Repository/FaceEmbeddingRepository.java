@@ -10,4 +10,5 @@ import java.util.List;
 @Repository
 public interface FaceEmbeddingRepository extends JpaRepository<FaceEmbedding,Long> {
     List<FaceEmbedding> findByPersonne(Personne personne);
+    List<FaceEmbedding> findByPersonneIdNot(Long personne_id);
 }

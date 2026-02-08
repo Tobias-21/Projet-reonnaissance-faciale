@@ -33,4 +33,10 @@ public class VerificationController {
         ));
 
     }
+
+    @PostMapping("/test")
+    public void verification() throws IOException {
+        verificationService.Resultat();
+
+    }
 }

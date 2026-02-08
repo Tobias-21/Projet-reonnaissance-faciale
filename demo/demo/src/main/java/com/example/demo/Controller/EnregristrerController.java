@@ -33,4 +33,12 @@ public class EnregristrerController {
         ));
 
     }
+
+    @PostMapping("/enregistrerLbph")
+    public ResponseEntity<?> enregistrerLbph(@RequestParam("nom") String nom, @RequestParam("prenom") String prenom, @RequestParam List<MultipartFile> file) throws Exception {
+        enregistrement.enregistrer(nom, prenom, file);
+        return ResponseEntity.ok(Map.of(
+                "message", "Personne enregistrer avec succès"
+        ));
+    }
 }
